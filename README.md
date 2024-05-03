@@ -26,6 +26,7 @@
     - Test: 824 rows
 - Visualization
   ![image](https://github.com/cpham893/DATA3402_KaggleChallenge/assets/143844689/a48e1145-b3ab-4ed8-a6ef-ff21d5cd2bf7)
+![image](https://github.com/cpham893/DATA3402_KaggleChallenge/assets/143844689/725029e0-f1a1-4eda-a1e5-54d690cf4de6)
 
 - Preprocessing / Clean up
   - no duplicates
