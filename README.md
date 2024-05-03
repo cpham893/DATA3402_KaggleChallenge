@@ -6,7 +6,7 @@
 ***************************************
 - Goal: The task, as defined by the Kaggle challenge is to use predefined medical parameters to predict the health outcomes of horses.
 - My approach: The approach in this repository formulates the problem as classification task, using the predefined features given in the dataset as input as well as doing some mild clean up of the dataset. Only one machine learning model was analyzed, decision tree. Precision, recall, F-1, R^2, and RMSE were calculated based on the model.
-- Performance: The results for precision, recall, and F-1 were pretty lack-luster with all of them being <0.40. RMSE was not great either at a 1.25. R^2 recieved a -0.94.
+- Performance: The results for precision, recall, and F-1 were pretty lack-luster with all of them being <0.40. RMSE was 1.25 and R^2 recieved a -0.94.
 
 ### Libraries
 ***************************************
