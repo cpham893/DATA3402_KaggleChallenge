@@ -24,11 +24,15 @@
     - Train: 1111 rows
     - Validation: 124 rows
     - Test: 824 rows
+- Visualization
+  ![image](https://github.com/cpham893/DATA3402_KaggleChallenge/assets/143844689/a48e1145-b3ab-4ed8-a6ef-ff21d5cd2bf7)
+
 - Preprocessing / Clean up
   - no duplicates
   - no outliers
   - removed columns: id, hospital_number, cp_data 
   - null values: impute with mode
+    - "temp_of_extremities","peripheral_pulse","mucous_membrane","capillary_refill_time", "pain","peristalsis","abdominal_distention","nasogastric_tube","nasogastric_reflux", "rectal_exam_feces","abdomen","abdomo_appearance"
   - nasogastric_reflux & rectal_exam_feces had inconsistent categories: impute with mode
 - Training
   - split the train.csv into train (90%) and validation (10%) since there's already a testing file
