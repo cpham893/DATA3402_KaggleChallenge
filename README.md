@@ -55,11 +55,11 @@ The task, as defined by the Kaggle challenge is to use predefined medical parame
  
 ## How to reproduce results
 ***************************************
-1. Download the train.csv and test.csv from the kaggle challenge (https://www.kaggle.com/code/chirag2306/predict-health-outcomes-of-horses/notebook)
+1. Download the train.csv and test.csv from the kaggle challenge (https://www.kaggle.com/competitions/playground-series-s3e22)
 2. Load the CSV files and run the DataUnderstanding_Preprocessing notebook in order to obtain the train_preprocessed.csv and test_prepocessed.csv.
 3. Load the preprocessed CSV files and run the ML_DecisionTree notebook to train the model and look at the results. You can also modify the max_depth if needed.
 
 ## Citations
 ***************************************
- - https://www.kaggle.com/code/chirag2306/predict-health-outcomes-of-horses/notebook
+ - https://www.kaggle.com/competitions/playground-series-s3e22
  - https://www.kaggle.com/datasets/yasserh/horse-survival-dataset
