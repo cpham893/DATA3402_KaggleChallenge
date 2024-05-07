@@ -1,12 +1,12 @@
 # Predicting Horse Health Using Decision Tree
 ***************************************
-- This repository holds and attempt to apply Decision Tree to the "Predict Health Outcomes of Horses" Kaggle challenge.
+- This repository holds an attempt to apply a decision tree model to the "Predict Health Outcomes of Horses" Kaggle challenge.
 
 ### Overview
 ***************************************
-The task, as defined by the Kaggle challenge is to use predefined medical parameters to predict the health outcomes of horses. The approach in this repository formulates the problem as classification task, using the predefined features given in the dataset as input as well as doing some clean up of the dataset. Only one machine learning model was analyzed, decision tree. Accuracy, precision, recall, and F-1 were calculated based on the training and validation set. The accuracy of the decision tree model is 83.06% indicating that the model can correctly predict the outcome around 83% of the time.
+The task, as defined by the Kaggle challenge is to use medical parameters to predict the health outcomes of horses (lived, died, or euthanized), making this a classification problem. I will be using the predefined features given in a cleaned and preproccessed version of the given dataset as input. Only one machine learning model (decision tree) was analyzed. Accuracy as well as precision, recall, and F-1 score were calculated based on the training and validation set in order to gage the effectiveness of the model. The accuracy of the decision tree model is 83.06%, indicating that the model can correctly predict the outcome around 83% of the time.
 
-### Summary of Workdone
+### Summary of Work Done
 ***************************************
 - ***Data Overview***
   - Data Type: Tabular
@@ -25,13 +25,13 @@ The task, as defined by the Kaggle challenge is to use predefined medical parame
   - Remove Columns: 'id', 'hospital_number', 'cp_data' 
   - Null Values: imputation (mode)
     - Columns: 'temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance'
-  - Inconsistant Data Inputs
+  - Inconsistent Data Inputs
     - 'nasogastric_reflux': replace 'slight' with mode
     - 'rectal_exam_feces': replace 'serosanguious' with mode
     - 'peristalsis': replace 'distend_small' with mode
   - Encode Categorical Features (One-Hot Encoding)
     - 'surgery', 'age', 'temp_of_extremities', 'peripheral_pulse', 'mucous_membrane', 'capillary_refill_time', 'pain', 'peristalsis', 'abdominal_distention', 'nasogastric_tube', 'nasogastric_reflux', 'rectal_exam_feces', 'abdomen', 'abdomo_appearance', 'surgical_lesion', 'outcome'
-  - Normalize Numerical Features: MinMaxScaler   
+  - Normalize Numerical Features (MinMaxScaler)   
 
 - ## **Training**
     - Train: 1111 rows (90% of train.csv)
@@ -39,6 +39,7 @@ The task, as defined by the Kaggle challenge is to use predefined medical parame
     - Test: 824 rows (100% of test.csv)
     - Model: Decision Tree
       - max_depth=10
+      - increasing max_depth increases the risk of overfitting
 ![download](https://github.com/cpham893/DATA3402_KaggleChallenge/assets/143844689/a307647c-b13e-4785-94c7-9a1bee21658d)
 
 - ## **Results**
@@ -50,16 +51,16 @@ The task, as defined by the Kaggle challenge is to use predefined medical parame
 ![download](https://github.com/cpham893/DATA3402_KaggleChallenge/assets/143844689/bfceb230-dc6f-4258-b1ac-fcae3de01c7a)
 
 - ## **Future Work**
-  - I would try tuning and hyperparameters in order to improve my current decision tree model.
-  - I would also like to try XGBoosting since it is know to be effective.
+  - I would try tuning the model and applying hyperparameters in order to improve my current decision tree model.
+  - I would also like to impliment XGBoosting since it is known to be effective.
  
-## How to reproduce results
+# How to reproduce results
 ***************************************
 1. Download the train.csv and test.csv from the kaggle challenge (https://www.kaggle.com/competitions/playground-series-s3e22)
 2. Load the CSV files and run the DataUnderstanding_Preprocessing notebook in order to obtain the train_preprocessed.csv and test_prepocessed.csv.
 3. Load the preprocessed CSV files and run the ML_DecisionTree notebook to train the model and look at the results. You can also modify the max_depth if needed.
 
-## Citations
+# Citations
 ***************************************
  - https://www.kaggle.com/competitions/playground-series-s3e22
  - https://www.kaggle.com/datasets/yasserh/horse-survival-dataset
